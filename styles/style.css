@@ -206,49 +206,105 @@ body {
     text-transform: uppercase;
 }
 
+
 /* why choose section styles */
-.choossy-section{
+.choossy-section {
     background-color: #230E3D;
     padding: 100px 0;
 }
 
-.facilities{
+.facilities {
     padding-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 30px;
 }
-.facilities .box{
+
+.facilities .box {
     background-color: rgba(53, 17, 101, 0.4);
     padding: 40px;
     border-radius: 40px;
     text-align: left;
 }
-.facilities .box h4{
+
+.facilities .box h4 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 14px;
 }
-.facilities .box p{
+
+.facilities .box p {
     font-size: 0.9rem;
     color: #d5cfcf;
 }
-#box1{
+
+#box1 {
     grid-row: span 2;
     display: flex;
     align-items: center;
 }
-#box2{
+
+#box2 {
     grid-column: span 2;
     grid-row: span 1;
 }
-#box3{
+
+#box3 {
     grid-column: span 2;
     grid-row: span 1;
 }
-#box4{
+
+#box4 {
     grid-column: span 2;
+}
+
+
+/* episodes section styles */
+.episode-section {
+    padding: 120px 0;
+}
+
+.episode-box {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.episode-card {
+    background-color: #250D44;
+    grid-column: span 1;
+    border-radius: 24px;
+}
+
+.episode-card iframe {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.card-text {
+    padding: 24px;
+    text-align: left;
+}
+
+.card-text h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.card-text p {
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+    color: #d5cfcf;
+}
+
+.card-text h5 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 24px;
+    color: #00FF88;
 }
 
 
@@ -262,7 +318,12 @@ body {
     }
 
     .navbar {
-        padding: 10px 0;
+        padding: 10px 20px 10px 10px;
+        justify-content: space-between;
+    }
+
+    .logo h2 {
+        font-size: 2.3rem;
     }
 
     .nav-menu {
@@ -312,20 +373,53 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .choossy-section{
+    .choossy-section {
         padding: 40px 0;
     }
-    .facilities{
+
+    .facilities {
         padding: 14px 20px 0;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
-    .facilities .box{
+
+    .facilities .box {
         padding: 24px;
         border-radius: 22px;
     }
-    #box1, #box2, #box3, #box4, #box5{
+
+    #box1,
+    #box2,
+    #box3,
+    #box4,
+    #box5 {
         grid-column: span 1;
         grid-row: span 1;
+    }
+
+    .episode-section {
+        padding: 40px 20px;
+    }
+
+    .episode-box {
+        padding-top: 20px;
+        gap: 15px;
+    }
+
+    .episode-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .episode-card {
+        border-radius: 15px;
+    }
+
+    .episode-card iframe {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .card-text {
+        padding: 15px;
     }
 }

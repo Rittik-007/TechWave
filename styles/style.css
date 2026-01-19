@@ -37,9 +37,13 @@ body {
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
-
 .btn:hover {
     background: linear-gradient(to bottom right, #9100F8, #FB09B4, #F7E93F);
+}
+
+.banner p, .about-container p, .stat-box p, .facilities .box p, .card-text p, .host-details p, .link-box p, .copyright p{
+    font-size: 1rem;
+    opacity: 60%;
 }
 
 /* main styles */
@@ -110,6 +114,7 @@ body {
 
 .new-badge {
     display: inline-block;
+    opacity: 100% !important;
     background-color: #00FF88;
     color: #1A0B2E !important;
     padding: 8px 16px;
@@ -147,8 +152,6 @@ body {
 }
 
 .banner p {
-    font-size: 0.8rem;
-    color: #dfdcdc;
     margin-bottom: 25px;
 }
 
@@ -165,8 +168,8 @@ body {
 }
 
 .banner-button2:hover {
-    border: 1px solid #0d844d;
-    background-color: #0d844d;
+    border: 1px solid #16a462;
+    background-color: #16a462;
     color: #FFFFFF;
 }
 
@@ -176,12 +179,10 @@ body {
 }
 
 .about-container p {
-    max-width: 670px;
+    max-width: 750px;
     margin: 0 auto;
-    font-size: 0.8rem;
     line-height: 20px;
     margin-bottom: 60px;
-    color: #dfdcdc;
 }
 
 .about-container hr {
@@ -203,7 +204,6 @@ body {
 }
 
 .stat-box p {
-    font-size: 0.9rem;
     text-transform: uppercase;
 }
 
@@ -235,10 +235,6 @@ body {
     margin-bottom: 14px;
 }
 
-.facilities .box p {
-    font-size: 0.9rem;
-    color: #d5cfcf;
-}
 
 #box1 {
     grid-row: span 2;
@@ -296,9 +292,7 @@ body {
 }
 
 .card-text p {
-    font-size: 0.8rem;
     margin-bottom: 12px;
-    color: #d5cfcf;
 }
 
 .card-text h5 {
@@ -334,10 +328,8 @@ body {
 }
 
 .host-details p {
-    font-size: 1rem;
     font-weight: 300;
     margin-bottom: 16px;
-    color: #d5cfcf;
 }
 
 .host-social {
@@ -354,6 +346,40 @@ body {
     align-items: center;
 }
 
+/* footer section styles */
+.footer-section{
+    padding: 80px 0;
+    background-image: url(../images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.footer-container h2 {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.footer-container span {
+    background: linear-gradient(to top right, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.footer-links{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.link-box{
+    display: flex;
+    gap: 8px;
+}
 
 
 
@@ -488,5 +514,20 @@ body {
     .host-social{
         padding-top: 15px;
         justify-content: center;
+    }
+
+    .footer-section{
+        padding: 40px 0;
+    }
+    .footer-container h2 {
+        font-size: 2.7rem;
+        margin-bottom: 20px;
+    }
+    .footer-links{
+        max-width: 300px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 24px;
     }
 }

@@ -7,8 +7,21 @@
 /* shared styles */
 body {
     background-color: #1A0B2E;
+    color: #FFFFFF;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
+}
+
+.common-width {
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 16px;
 }
 
 .btn {
@@ -76,13 +89,14 @@ body {
 .hamburger {
     display: none;
 }
-.hamburger img{
+
+.hamburger img {
     width: 24px;
     height: 24px;
 }
 
 /* banner */
-.banner{
+.banner {
     text-align: center;
     width: 100%;
     height: 760px;
@@ -92,7 +106,8 @@ body {
     background-size: contain;
     background-position: center;
 }
-.new-badge{
+
+.new-badge {
     display: inline-block;
     background-color: #00FF88;
     color: #1A0B2E !important;
@@ -106,7 +121,7 @@ body {
     right: 36px;
 }
 
-.microphone{
+.microphone {
     display: inline-block;
     width: 350px;
     height: 350px;
@@ -115,25 +130,28 @@ body {
     background-size: cover;
     position: relative;
 }
-.microphone img{
+
+.microphone img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.banner h1{
+
+.banner h1 {
     font-size: 3.7rem;
     font-weight: 800;
     color: #FFFFFF;
     margin-bottom: 10px;
 }
-.banner p{
+
+.banner p {
     font-size: 0.8rem;
     color: #dfdcdc;
     margin-bottom: 25px;
 }
 
-.banner-button2{
+.banner-button2 {
     background-color: transparent;
     color: #00FF88;
     font-size: 1rem;
@@ -144,10 +162,48 @@ body {
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
-.banner-button2:hover{
+
+.banner-button2:hover {
     border: 1px solid #0d844d;
     background-color: #0d844d;
     color: #FFFFFF;
+}
+
+/* about section styles */
+.about-section {
+    padding: 50px 0 100px;
+}
+
+.about-container p {
+    max-width: 670px;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    line-height: 20px;
+    margin-bottom: 60px;
+    color: #dfdcdc;
+}
+
+.about-container hr {
+    border-color: #170f22;
+}
+
+.stats {
+    padding: 60px 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat-box h4 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #00FF88;
+    margin-bottom: 16px;
+}
+
+.stat-box p {
+    font-size: 0.9rem;
+    text-transform: uppercase;
 }
 
 
@@ -163,34 +219,47 @@ body {
     .nav-menu {
         display: none;
     }
+
     .nav-button button {
         display: none;
     }
+
     .hamburger {
         display: contents;
     }
 
-    
-    .banner{
+
+    .banner {
         padding: 40px 0;
         height: 500px;
         background-position: 0 70px;
     }
-    .new-badge{
+
+    .new-badge {
         font-size: 0.5rem;
         padding: 6px 12px;
         right: 0px;
     }
-    .microphone{
+
+    .microphone {
         width: 200px;
         height: 200px;
         margin-bottom: 20px;
     }
-    .microphone img{
+
+    .microphone img {
         width: 30%;
     }
 
-    .banner h1{
+    .banner h1 {
         font-size: 2.8rem;
+    }
+
+    .about-section {
+        padding: 40px 20px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

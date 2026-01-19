@@ -21,6 +21,7 @@ body {
 .section-title {
     font-size: 2.6rem;
     font-weight: 700;
+    text-align: center;
     margin-bottom: 16px;
 }
 
@@ -307,6 +308,52 @@ body {
     color: #00FF88;
 }
 
+/* host section styles */
+.host-section {
+    padding-bottom: 120px;
+}
+
+.host-container {
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    padding: 40px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.host-details {
+    text-align: left;
+}
+
+.host-details h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.host-details p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 16px;
+    color: #d5cfcf;
+}
+
+.host-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.host-social-box {
+    padding: 7px;
+    border: 1px solid #948b8b;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+}
+
 
 
 
@@ -398,7 +445,7 @@ body {
     }
 
     .episode-section {
-        padding: 40px 20px;
+        padding: 40px 20px 60px;
     }
 
     .episode-box {
@@ -421,5 +468,25 @@ body {
 
     .card-text {
         padding: 15px;
+    }
+
+    .host-section {
+        padding: 0 20px 40px;
+    }
+
+    .host-container {
+        margin-top: 20px;
+        padding: 24px;
+        border-radius: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .host-details {
+        text-align: center;
+    }
+    .host-social{
+        padding-top: 15px;
+        justify-content: center;
     }
 }

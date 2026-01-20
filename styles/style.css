@@ -380,6 +380,11 @@ body {
     display: flex;
     gap: 8px;
 }
+.copyright p{
+    display: inline-block;
+    border-top: 1px solid #948b8b;
+    padding: 10px 20px 0;
+}
 
 
 
@@ -413,7 +418,7 @@ body {
 
 
     .banner {
-        padding: 40px 0;
+        padding: 40px 10px;
         height: 500px;
         background-position: 0 70px;
     }
@@ -445,6 +450,16 @@ body {
     .stats {
         grid-template-columns: repeat(2, 1fr);
     }
+    .stat-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0 40px;
+        border-bottom: 1px solid #3b1c63;
+    }
+    .stat-box p{
+        margin-bottom: 0;
+    }
 
     .choossy-section {
         padding: 40px 0;
@@ -459,6 +474,7 @@ body {
     .facilities .box {
         padding: 24px;
         border-radius: 22px;
+        border: 3px solid #401774;
     }
 
     #box1,
@@ -485,6 +501,7 @@ body {
 
     .episode-card {
         border-radius: 15px;
+        border: 3px solid #401774;
     }
 
     .episode-card iframe {
@@ -506,6 +523,11 @@ body {
         border-radius: 20px;
         flex-direction: column;
         gap: 15px;
+        border: 3px solid #401774;
+    }
+    .host-image img{
+        border-radius: 50%;
+        border: 5px solid #9100F8;
     }
 
     .host-details {
